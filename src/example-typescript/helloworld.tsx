@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React from 'react';
+
 import HelloForm from './helloform';
 import HelloContent from './hellocontent';
 

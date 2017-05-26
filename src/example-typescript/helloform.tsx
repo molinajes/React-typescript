@@ -1,8 +1,9 @@
-import * as React from 'react';
+import React from 'react';
 
 export default class HelloForm extends React.Component<IHelloFormProps, any> {
     constructor(props: IHelloFormProps) {
         super(props);
+        console.log("HelloForm :", props);
     }
 
 	public render() {

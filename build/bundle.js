@@ -9535,7 +9535,7 @@ module.exports = getIteratorFn;
 
 
 
-class HelloWorld extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+class HelloWorld extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     constructor(props) {
         super(props);
         this.state = { name: this.props.defaultName };
@@ -9545,9 +9545,9 @@ class HelloWorld extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
         this.setState({ name: event.target.value });
     }
     render() {
-        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1__helloform__["a" /* default */], { name: this.state.name, handleChange: this.handleChange }),
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_2__hellocontent__["a" /* default */], { name: this.state.name })));
+        return (__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__helloform__["a" /* default */], { name: this.state.name, handleChange: this.handleChange }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__hellocontent__["a" /* default */], { name: this.state.name })));
     }
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = HelloWorld;
@@ -9572,12 +9572,12 @@ module.exports = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 
-class HelloContent extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+class HelloContent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     constructor(props) {
         super(props);
     }
     render() {
-        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
+        return (__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null,
             "Hello ",
             this.props.name,
             "!"));
@@ -9595,13 +9595,14 @@ class HelloContent extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 
-class HelloForm extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+class HelloForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     constructor(props) {
         super(props);
+        console.log("HelloForm :", props);
     }
     render() {
-        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { value: this.props.name, onChange: e => this.props.handleChange(e) })));
+        return (__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { value: this.props.name, onChange: e => this.props.handleChange(e) })));
     }
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = HelloForm;
@@ -9623,16 +9624,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 const root = document.getElementById('root');
-class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+class Main extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     constructor(props) {
         super(props);
     }
     render() {
-        return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_2__helloworld__["a" /* default */], { defaultName: 'World' })));
+        return (__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__helloworld__["a" /* default */], { defaultName: 'World' })));
     }
 }
-__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"](__WEBPACK_IMPORTED_MODULE_0_react__["createElement"](Main, null), root);
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Main, null), root);
 
 
 /***/ }),

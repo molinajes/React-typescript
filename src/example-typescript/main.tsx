@@ -1,5 +1,5 @@
-import * as React from 'react';
-import * as DOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import HelloWorld from './helloworld';
 
 const root = document.getElementById('root');
@@ -18,4 +18,4 @@ class Main extends React.Component<any, any> {
 	}
 }
 
-DOM.render(<Main />, root);
+ReactDOM.render(<Main />, root);

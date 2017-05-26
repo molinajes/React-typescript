@@ -60,7 +60,7 @@ module.exports = {
 
 			{
 				test: /.jsx?$/, // /\.js$/
-				loader: 'babel-loader', // 'babel-loader' is also a valid name to reference
+				loader: 'babel-loader',
 				exclude: /(node_modules|bower_components)/,
 				query: {
 					presets: ['es2015-native-modules', 'react']
@@ -74,6 +74,6 @@ module.exports = {
 
 	resolve: {
 		// Add '.ts' and '.tsx' as resolvable extensions.
-		extensions: [".ts", ".tsx", ".js", ".json", ".jsx"]
+		extensions: [".ts", ".tsx", ".js", ".json"]
 	},
 };

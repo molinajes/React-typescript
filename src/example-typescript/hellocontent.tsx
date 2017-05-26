@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 export default class HelloContent extends React.Component<IHelloContentProps, any> {
     constructor(props: IHelloContentProps) {
