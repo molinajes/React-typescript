@@ -1,0 +1,34 @@
+{
+  "name": "react_fabric_demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "compile": "babel-node server",
+    "webpack": "webpack --watch",
+    "build": "babel src -d build",
+    "serve": "node build/test1",
+    "tsc": "tsc",
+    "tsc:watch": "tsc -w",
+    "build:webpack": "webpack --config webpack.config.js -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^15.0.25",
+    "@types/react-dom": "^15.5.0",
+    "office-ui-fabric-react": "^2.33.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.3",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "babel-preset-react": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.3.3",
+    "webpack": "^2.6.0"
+  }
+}

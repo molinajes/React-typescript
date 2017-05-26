@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./build/",
+        "allowSyntheticDefaultImports": true, // see below
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "es6", // use ES2015 modules
+        "target": "es6", // compile to ES2015 (Babel will do the rest)
+        "jsx": "react",
+        "allowJs": true
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules", // don't run on any code in the node_modules directory
+        "**/*.spec.ts"
+    ]
+}
