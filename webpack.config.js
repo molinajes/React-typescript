@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-	entry: './src/example-1/main.tsx',
+	entry: './src/example-fabric-ui/main.tsx',
 	output: {
 
 		path: path.resolve(__dirname, "build"), // string
